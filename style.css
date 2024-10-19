@@ -1,0 +1,152 @@
+html{
+	scroll-behavior:smooth;
+}
+.home, .about, .contact{
+	height:100vh;
+	width:100%;
+}
+.home{
+	background-image:url('https://th.bing.com/th/id/R.420df78341ee91d181e241f8415b5131?rik=laRRNYNQNBAIdg&pid=ImgRaw&r=0');
+	background-repeat:no-repeat;
+	background-size:cover;
+	align-items:center;
+	display:flex;
+}
+p{
+	color:white;
+	margin-bottom:40px;
+	font-size:25px;
+}
+.home h1{
+	color:#fff;
+	margin-left:100px;
+}
+.about{
+	background-color:#000;
+}
+.about h1{
+	margin-left:100px;
+	color:#fff;
+}
+.about h3{
+	margin-left:120px;
+	margin-top:60px;
+	margin-bottom:150px;
+	color:#fff;
+}
+.project{
+	background-color:#000;
+	width:100%;
+	height:50vh;
+}
+.project h1{
+	margin-left:100px;
+	color:#fff;
+}
+.contact{
+	background-color:#000;
+}
+.contact h1{
+	margin-left:100px;
+	color:#fff;
+}
+*{
+	padding:0;
+	margin:0;
+}
+.menu{
+	position:fixed;
+	top:10px;
+	left:10px;
+	padding:5px 10px;
+	cursor:pointer;
+	border-radius:10px;
+	background-color:#fff;
+}
+.menu i{
+	font-size:30px;
+}
+.tab{
+	width:300px;
+	background-color:#000;
+	height:100vh;
+	border:2px solid gray;
+	position:fixed;
+	top:0;
+	left:-304px;
+	transition:0.5s;
+	z-index:1;
+}
+.show-tab{
+	left:0;
+}
+.tab ul{
+	padding:20px;
+	list-style-type:none;
+	margin-top:50px;
+}
+.tab ul li{
+	margin-top:20px;
+}
+.tab ul li a{
+	color:gray;
+	text-decoration:none;
+	font-size:23px;
+	transition:0.5s;
+}
+.tab ul li a:hover{
+	color:#fff;
+}
+.tab .remove{
+	margin-left:245px;
+	margin-top:20px;
+	padding:3px 6px;
+	cursor:pointer;
+	border-radius:7px;
+	background-color:gray;
+}
+.tab .remove:hover{
+	transition:0.3s;
+	background-color:#fff;
+}
+.overlay{
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:100vh;
+	background-color:#000;
+	opacity:0;
+	z-index:-1;
+	transition:0.5s;
+}
+.show-overlay{
+	opacity:0.5;
+	z-index:0;
+}
+.fn1{
+	width:350px;
+	height:70px;
+	margin-bottom:50px;
+	border-radius:8px;
+}
+.fn2{
+	width:350px;
+	height:90px;
+	margin-bottom:50px;
+	border-radius:8px;
+}
+.fn3{
+	width:200px;
+	height:30px;
+	border-radius:8px;
+}
+.project h2{
+	color:#fff;
+	z-index:3;
+}
+.project a{
+	color:white;
+	z-index:3;
+	text-decoration:none;
+}
